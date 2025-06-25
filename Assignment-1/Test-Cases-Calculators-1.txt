@@ -1,0 +1,126 @@
+1.ARITHMETIC OPERATION
+
+Test Case ID: TC_01
+Objective: Verify correct addition of two positive integers.
+Prerequisites: Calculator program is running.
+Steps:
+1. Enter the first number: 5
+2. Enter the operator: +
+3. Enter the second number: 3
+4. Press Enter/Execute.
+Input Data: 5, +, 3
+Expected Result: 8
+Actual Result: 8
+Status: Pass
+
+
+Test Case ID: TC_02
+Objective: Verify correct addition of two integers ,one negative and one positive.
+Prerequisites: Calculator program is running.
+Steps:
+1. Enter the first number: (-2)
+2. Enter the operator: +
+3. Enter the second number: 7
+4. Press Enter/Execute.
+Input Data: (-2), +, 7
+Expected Result: 5
+Actual Result: 5
+Status: Pass
+
+
+Test Case ID: TC_03
+Objective: Verify correct subtraction of two positive integers.
+Prerequisites: Calculator program is running.
+Steps:
+1. Enter the first number: 10
+2. Enter the operator: -
+3. Enter the second number: 4
+4. Press Enter/Execute.
+Input Data: 10, -, 4
+Expected Result: 6
+Actual Result: 6
+Status: Pass
+
+
+Test Case ID: TC_04
+Objective: Verify correct subtraction of two integers, one negative integer and positive integer.
+Prerequisites: Calculator program is running.
+Steps:
+1. Enter the first number: 5
+2. Enter the operator: -
+3. Enter the second number: (-2)
+4. Press Enter/Execute.
+Input Data: 5, -, (-2)
+Expected Result: 7
+Actual Result: 7
+Status: Pass
+
+
+Test Case ID: TC_05
+Objective: Verify correct division positive integer.
+Prerequisites: Calculator program is running.
+Steps:
+1. Enter the first number: 15
+2. Enter the operator: /
+3. Enter the second number: 3
+4. Press Enter/Execute.
+Input Data: 15, /, 3
+Expected Result: 5
+Actual Result: 5
+Status: Pass
+
+
+Test Case ID: TC_06
+Objective: Verify correct division of one negative integer and one positive integer.
+Prerequisites: Calculator program is running.
+Steps:
+1. Enter the first number: (-8)
+2. Enter the operator: /
+3. Enter the second number: 2
+4. Press Enter/Execute.
+Input Data: (-8), /, 2
+Expected Result: (-4)
+Actual Result: (-4)
+Status: Pass
+
+Test Case ID: TC_07
+Objective: Verify correct division of integer.
+Prerequisites: Calculator program is running.
+Steps:
+1. Enter the first number: 10
+2. Enter the operator: /
+3. Enter the second number: 4
+4. Press Enter/Execute.
+Input Data: 10, /, 4
+Expected Result: 2.5
+Actual Result: 2.0
+Status: Fail
+
+
+Test Case ID: TC_08
+Objective: Verify correct multiplication of positive integer.
+Prerequisites: Calculator program is running.
+Steps:
+1. Enter the first number: 4
+2. Enter the operator: *
+3. Enter the second number: 9
+4. Press Enter/Execute.
+Input Data: 4, *, 9
+Expected Result: 36
+Actual Result: 36
+Status: Pass
+
+
+Test Case ID: TC_09
+Objective: Verify correct multiplication of one negative integer and one positive integer.
+Prerequisites: Calculator program is running.
+Steps:
+1. Enter the first number: (-4)
+2. Enter the operator: *
+3. Enter the second number: 9
+4. Press Enter/Execute.
+Input Data: (-4), *, 9
+Expected Result: (-36)
+Actual Result: (-36)
+Status: Pass
+

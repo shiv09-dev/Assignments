@@ -1,0 +1,23 @@
+3. EDGE CASES AND BOUNDARY COONDITIONS:
+
+Single Operand:
+Input: 5 Expected Output: Error or prompt for another operand/operator
+
+Negative Numbers:
+Include various combinations of positive and negative numbers for all operations.
+
+Large Numbers:
+Test with numbers near the maximum and minimum values representable by the data types used (e.g., int, float, double).
+
+Floating-Point Precision:
+Test operations involving floating-point numbers to ensure correct precision and handling of potential rounding errors.
+
+
+
+4. USER INTERFACE/INTERACTION (if applicable):
+
+Clear/Reset Functionality:
+Verify that the "clear" or "reset" button/function correctly clears all inputs and results.
+
+Back/Delete Functionality:
+If implemented, test the backspace/delete functionality for correcting input errors.

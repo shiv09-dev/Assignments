@@ -38,14 +38,14 @@ void multi_Matrix(int a, int b, int c, int arr_1[a][b], int arr_2[b][c], int ans
 	int i,j,k;
 	 for ( i = 0; i < a; i++) 
 	{
-        for ( j = 0; j < c; j++) 
+        	for ( j = 0; j < c; j++) 
 		{
-            ans[i][j] = 0;
-            for (k = 0; k < b; k++) 
+            		ans[i][j] = 0;
+            		for (k = 0; k < b; k++) 
 			{
-                ans[i][j] += arr_1[i][k] * arr_2[k][j];
-     	    }
-     	}
+                		ans[i][j] += arr_1[i][k] * arr_2[k][j];
+     	    		}
+     		}
 	}
 }
 
@@ -71,22 +71,22 @@ int main()
 
 	printf("\n ------------- Matrix : 1 ------------- \n");	
 	GetArray(a, b, arr_1);
-    DisplayMatrix(a, b, arr_1);
+   	DisplayMatrix(a, b, arr_1);
 	
 	printf("\n");
 	
 	printf("\n -------------Matrix : 2 ------------- \n");
-    GetArray(b, c, arr_2);
-    DisplayMatrix(b, c, arr_2);
+    	GetArray(b, c, arr_2);
+    	DisplayMatrix(b, c, arr_2);
 	
 	
-    // Performing Matrix Multiplication
-    multi_Matrix(a, b, c, arr_1, arr_2, ans);
+        //Performing Matrix Multiplication
+    	multi_Matrix(a, b, c, arr_1, arr_2, ans);
 
 	
 	//Displaying Final Result
-    printf("\n------------- Result : Multiplication Matrix -------------\n");
-    DisplayMatrix(a, c, ans);
+    	printf("\n------------- Result : Multiplication Matrix -------------\n");
+    	DisplayMatrix(a, c, ans);
 
 	return 0;
 }

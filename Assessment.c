@@ -43,6 +43,7 @@ void multi_Matrix(int a, int b, int c, int arr_1[a][b], int arr_2[b][c], int ans
             		ans[i][j] = 0;
             		for (k = 0; k < b; k++) 
 			{
+				//ans[i][j] = ans[i][j] + (arr_1[i][k] * arr_2[i][k]);
                 		ans[i][j] += arr_1[i][k] * arr_2[k][j];
      	    		}
      		}

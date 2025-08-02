@@ -1,74 +1,70 @@
-#include<iostream>  
-#include<string>  
+#include<iostream>
 using namespace std;
-  
-string name1;  
-string department;  
-string subject;
-  
-class Person
-{  
-	public:  
-			void name()
-			{  
-				cout<<"Enter Name : ";  
-				cin>>name1; 
-			}  
-			void depart()
-			{  
-				cout<<"Enter Department Name : ";  
-				cin>>department; 
-			}  
-			void sub()
-			{  
-				cout<<"Enter Subject Name : ";  
-				cin>>subject; 
-			}  
-   
-};
-  
-class Student:public Person
-{  
-  	public:   
-   			void display()
-			{     
-    			cout<<"Name of the Student is : "<<name1<<endl;  
-    			cout<<"Department Student is studying in : "<<department<<endl;  
-    			cout<<"Subject Student is studying : "<<subject<<endl;  
- 			}  
-}; 
- 
-class Teacher:public Person
-{  
- 	public:  
- 			void display()
-			 {  
-    			cout<<"Name of the Teacher : "<<name1<<endl;   
-    			cout<<"Teacher teaching in the Department : "<<department<<endl;  
-    			cout<<"Teacher teaching the Subject is : "<<subject<<endl;  
- 			}  
-};
-  
-int main()
-{  
- 	cout<<"Information of Student"<<endl; 
-	  
- 	Student s;  
-	s.name();  
-	s.depart();  
-	s.sub();  
 
-	 
-	cout<<"\n";
-	 
-	cout<<"Information of Teacher "<<endl;  
+class Person
+{
+	public:
+			int age;
+			string name;
+			string address;
+			
+			void getdetails()
+			{
+				cout<<"Enter name : ";
+				cin>>name;
+				cout<<"Enter age : ";
+				cin>>age;
+				cout<<"Enter the address : ";
+				cin>>address;	
+			}
+};
+
+class Student : public Person
+{
+	private:
+				int roll_no;
+	public:
+			void display()
+			{
+				cout<<"Enter Roll NO : ";
+				cin>>roll_no;
+				
+				cout<<"\n \n ";
+				cout<<"Name of the student : "<<name<<endl;
+				cout<<"Age of the student : "<<age<<endl;
+				cout<<"Address of teh student : "<<address<<endl;
+				cout<<"Roll NO of the student : "<<roll_no<<endl;
+			}	
+};
+
+class Teacher : public Person
+{
+	private:
+				string depart;
+	public:
+			void display()
+			{
+				cout<<"Enter Department : ";
+				cin>>depart;
+				
+				cout<<"\n \n";
+				cout<<"Name of the Teacher is : "<<name<<endl;
+				cout<<"Age of the Teacher is : "<<age<<endl;
+				cout<<"Adrress of the teacher is : "<<address<<endl;
+				cout<<"Department of Techer is : "<<depart<<endl;
+			}	
+};
+
+int main()
+{
 	
-	Teacher t;  
-	t.name();  
-	t.depart();  
-	t.sub(); 
+	Student s;
+	s.getdetails();
+	s.display();
 	
-	s.display();  
 	cout<<"\n \n ";
-	t.display();    
+	
+	Teacher t;
+	t.getdetails();
+	t.display();
 }

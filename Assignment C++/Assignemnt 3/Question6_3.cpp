@@ -26,14 +26,13 @@ class Student : public Person
 	public:
 			void display()
 			{
-				cout<<"Enter Roll NO : ";
-				cin>>roll_no;
+				cout<<"Details of Student : "<<endl;
+				cout<<"\n";
 				
-				cout<<"\n \n ";
-				cout<<"Name of the student : "<<name<<endl;
-				cout<<"Age of the student : "<<age<<endl;
-				cout<<"Address of teh student : "<<address<<endl;
-				cout<<"Roll NO of the student : "<<roll_no<<endl;
+				getdetails();
+				
+				cout<<"Enter Roll NO : ";
+				cin>>roll_no;				
 			}	
 };
 
@@ -44,14 +43,13 @@ class Teacher : public Person
 	public:
 			void display()
 			{
+				cout<<"Details of Teacher : "<<endl;
+				cout<<"\n";
+				
+				getdetails();
+				
 				cout<<"Enter Department : ";
 				cin>>depart;
-				
-				cout<<"\n \n";
-				cout<<"Name of the Teacher is : "<<name<<endl;
-				cout<<"Age of the Teacher is : "<<age<<endl;
-				cout<<"Adrress of the teacher is : "<<address<<endl;
-				cout<<"Department of Techer is : "<<depart<<endl;
 			}	
 };
 
@@ -59,12 +57,10 @@ int main()
 {
 	
 	Student s;
-	s.getdetails();
 	s.display();
 	
 	cout<<"\n \n ";
-	
+			
 	Teacher t;
-	t.getdetails();
 	t.display();
 }
